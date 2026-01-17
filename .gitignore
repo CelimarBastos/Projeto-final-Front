@@ -1,0 +1,20 @@
+# Dependências e Scripts
+
+Este projeto usa Node.js com npm para gerenciar dependências.
+
+## Configuração
+
+1. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+2. Para desenvolvimento, use:
+   ```bash
+   npm run dev
+   ```
+
+3. Para compilar para produção:
+   ```bash
+   npm run build
+   ```
