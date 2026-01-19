@@ -1,7 +1,18 @@
-export function ProductListing() {
+import { ProductCard } from '../ProductCard/ProductCard';
+import './ProductListing.css';
+
+export function ProductListing({ products }) {
   return (
     <div className="product-listing">
-      <h2>Product Listing</h2>
+      {products.map((product, index) => (
+        <ProductCard
+          key={index}
+          image={product.image}
+          name={product.name}
+          price={product.price}
+          priceDiscount={product.priceDiscount}
+        />
+      ))}
     </div>
   );
 }

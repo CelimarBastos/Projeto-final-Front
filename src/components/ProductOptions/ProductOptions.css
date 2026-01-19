@@ -1,0 +1,51 @@
+/* Product Options Component */
+@import '../../styles/colors.css';
+
+.product-options {
+  padding: 16px 0;
+}
+
+.options-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.option-item {
+  border: 1px solid var(--color-light-gray-2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.options-shape-square .option-item {
+  width: 46px;
+  height: 46px;
+}
+
+.options-shape-circle .option-item {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+}
+
+.option-item.active {
+  border-color: var(--color-primary);
+  border-width: 2px;
+}
+
+.option-text {
+  font-size: 14px;
+  color: var(--color-dark-gray-2);
+  font-weight: 500;
+}
+
+.options-shape-square .option-text {
+  font-size: 24px;
+}
+
+.option-item:hover:not(.active) {
+  border-color: var(--color-primary);
+}

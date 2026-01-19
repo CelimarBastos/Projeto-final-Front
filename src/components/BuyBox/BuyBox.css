@@ -1,0 +1,124 @@
+/* Buy Box Component */
+@import '../../styles/colors.css';
+
+.buy-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background-color: var(--color-white);
+}
+
+.buy-box-name {
+  font-size: 32px;
+  color: var(--color-dark-gray);
+  margin: 0;
+  font-weight: 600;
+}
+
+.buy-box-reference {
+  font-size: 12px;
+  color: var(--color-dark-gray-3);
+  margin: 0;
+}
+
+.buy-box-rating {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-warning);
+  color: var(--color-white);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rating-stars svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-white);
+}
+
+.rating-text {
+  font-size: 14px;
+  color: var(--color-light-gray);
+  margin: 0;
+}
+
+.buy-box-price {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-top: 1px solid var(--color-light-gray-2);
+  border-bottom: 1px solid var(--color-light-gray-2);
+}
+
+.price-main {
+  font-size: 32px;
+  color: var(--color-dark-gray-2);
+  font-weight: 600;
+}
+
+.price-original {
+  font-size: 16px;
+  color: var(--color-light-gray-2);
+  text-decoration: line-through;
+  text-decoration-color: var(--color-light-gray-2);
+}
+
+.price-discount {
+  font-size: 32px;
+  color: var(--color-dark-gray-2);
+  font-weight: 600;
+}
+
+.buy-box-description {
+  font-size: 14px;
+  color: var(--color-dark-gray-2);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.buy-box-options {
+  padding: 16px 0;
+}
+
+.buy-box-button {
+  background-color: var(--color-warning);
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-box-button:hover {
+  background-color: #E89A08;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .buy-box {
+    padding: 16px;
+  }
+
+  .buy-box-name {
+    font-size: 24px;
+  }
+
+  .price-main,
+  .price-discount {
+    font-size: 24px;
+  }
+}

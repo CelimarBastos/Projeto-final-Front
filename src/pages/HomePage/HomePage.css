@@ -1,0 +1,53 @@
+/* Home Page */
+@import '../../styles/colors.css';
+
+.home-page {
+  width: 100%;
+}
+
+.home-gallery-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.collection-item {
+  overflow: hidden;
+  border-radius: 4px;
+  aspect-ratio: 16 / 9;
+}
+
+.collection-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.collection-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .collections-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-gallery-section {
+    padding: 12px;
+  }
+
+  .collections-grid {
+    grid-template-columns: 1fr;
+  }
+}

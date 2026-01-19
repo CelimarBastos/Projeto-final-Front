@@ -1,0 +1,15 @@
+/* Logo Component */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo-white img {
+  filter: brightness(0) invert(1);
+}
