@@ -1,3 +1,5 @@
+//ATENÇÃO PRAR VISUALIZAR A PAGINA   http://localhost:5175/
+
 # Drip Store - E-commerce Frontend
 
 Uma aplicação de e-commerce moderna desenvolvida com **React 18** e **Vite**, oferecendo uma experiência de compra fluida com interface responsiva e componentes reutilizáveis.
